@@ -5,7 +5,7 @@ var os = require("os");
 const app = express();
 
 app.get('/', (req, res) => {
-    res.json({ container: os.hostname});
+    res.json({ container: 'hostname: ' + os.hostname});
 })
 
 app.post('/github', (req, res) => {
